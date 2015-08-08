@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  .container
+    each movie in movies
+      .card
+        .img_content
+          a(href="/movie/#{movie._id}")
+            img#poster(src="#{movie.poster}", alt="#{movie.title}")
+        .info
+          p
+            a.title(href="/movie/#{movie._id}")= movie.title
+          p.meta
+            span.release_date= movie.year
+              span.glyphicon.glyphicon-calendar.x1
+          p.overview= movie.summary
+          p.view_more
+            a.btn.btn-primary(href="/movie/#{movie._id}") 更多信息

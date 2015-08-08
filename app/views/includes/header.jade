@@ -1,0 +1,18 @@
+nav.navbar.navbar-inverse
+  .container
+    .navbar-header
+      a.navbar-brand(href="/")
+        span.glyphicon.glyphicon-home
+    ul.nav.navbar-nav.navbar-right
+      if user
+        li
+          a(href="#")
+            span.glyphicon.glyphicon-user
+            | &nbsp;&nbsp; #{user.username}
+        li
+          a(href="/user/logout") logout
+      else
+        li
+          a(href="/signup") sign up
+        li
+          a(href="/signin") sign in

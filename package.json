@@ -1,0 +1,17 @@
+{
+  "name": "N-movie",
+  "version": "0.0.1",
+  "dependencies": {
+    "bcrypt": "^0.8.4",
+    "body-parser": "^1.13.2",
+    "connect-mongo": "^0.8.2",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "jade": "^1.11.0",
+    "moment": "^2.10.5",
+    "mongoose": "^4.1.0",
+    "morgan": "^1.6.1",
+    "serve-static": "^1.10.0",
+    "underscore": "^1.8.3"
+  }
+}
